@@ -1,0 +1,129 @@
+/*menu principal*/
+.menu__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.menu__header{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu__list{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.lista{
+    display: flex;
+    align-items: center;
+}
+
+.menu__list__item a[href="#contacto"]{
+    display: none;
+}
+
+/*Hero*/
+
+.title__profile{
+    order: 3;
+}
+
+.title__network{
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    gap: 32px;
+}
+
+.title__network__item a{
+    display: flex;
+    align-items: center;
+}
+
+.title__div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title__container{
+    display: flex;
+    flex-direction: column;
+}
+/*Sección skills*/
+section.skills{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__line{
+    display: flex;
+}
+
+.skills__box{
+    display: flex;
+    align-items: flex-end;
+}
+
+/*Sección Hobbies*/
+section.hobbies{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hobbies__line{
+    display: flex;
+}
+.hobbies__box{
+    display: flex;
+    align-items: flex-end;
+}
+
+/*Sección de Formación académica*/
+.academic__title{
+    display:flex;
+    justify-content: center;
+}
+.academic__courses{
+    display:flex;
+    justify-content: center;
+}
+.academic__courses__item__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+}
+/* experiencia*/
+.experiences__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.experience__section__title{
+    display: flex;
+    justify-content: center;
+}
+.experience__box{
+    display: flex;
+    align-items: center;
+}
+
+.experience__box:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+}
+.experience__box:nth-child(4){
+    display: flex;
+    flex-direction: row-reverse;
+}
