@@ -127,3 +127,24 @@ section.hobbies{
     display: flex;
     flex-direction: row-reverse;
 }
+/*Contacto*/
+section.formcontato{
+    display: flex;
+    justify-content: center;
+}
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+}
+.formcontato__contacto{
+    display: flex;
+}
+
+label{
+    padding: 7px 12px;
+}
