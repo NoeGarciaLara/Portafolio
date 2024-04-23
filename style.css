@@ -287,7 +287,9 @@ label {
 
 /*footeer*/
 
-
+section.footer{
+    padding: 32px;
+}
 
 
 /*Tablet*/
