@@ -160,3 +160,30 @@ section.footer{
     flex-direction: column;
     align-items: center;
 }
+
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+
+    /* Menú */
+    .menu__container{
+        height: 56px;
+        justify-content: space-between;
+    }
+
+    /*title*/
+    .title__network{
+        margin-top: 8px;
+    }
+    /*About*/
+        
+    /*Skills*/
+    
+    /*Hobbies*/
+    
+    /*Formación Académica*/
+    
+    /*Experiencia Profesional*/
+    
+    }

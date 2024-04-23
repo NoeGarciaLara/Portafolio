@@ -79,7 +79,7 @@ section.about{
     margin-bottom: 16px;
 }
 
-.about__container p{
+.about__paragraph{
     margin-bottom: 16px;
     width: 751px;
 }
@@ -296,16 +296,55 @@ section.footer{
 @media (max-width: 768px) {
 
 /* Menú */
-
+.menu__list__item{
+    display: none;
+}
+.menu__header{
+    padding: 16px 0px 16px 32px;        
+}
+.menu__list__item__contato{
+    padding: 16px 32px 16px 0px;
+}
 /*title*/
+section.title{
+    margin: 56px 0px 0px 0px;
+    width: 100%;
+}
 
+.title__bio{
+    font-size: 22px;
+}
+.title__subsection{
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.title__profile{
+    height: 146px;
+    width: 146px;
+    margin: 32px;
+}
+.title__container{
+    width: 524px;
+    margin-left: 32px;
+}
 /*About*/
 
 section.about{
     padding: 32px;
-    background-color: #EAF2FD;
 }
 
+.about__title{
+    font-size: 22px;
+}
+
+.about__container{
+    width: 100%;
+}
+
+.about__paragraph{
+    width: 100%;
+}
 
 /*Skills*/
 
