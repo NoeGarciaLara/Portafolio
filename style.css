@@ -347,8 +347,34 @@ section.about{
 }
 
 /*Skills*/
+section.skills{
+    margin-bottom: 0px;
+}
+.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 32px;
+}
+.skills__box{
+    height: 118px;
+    margin-bottom: 32px;
+}
 
 /*Hobbies*/
+section.hobbies{
+    margin-bottom: 0px;
+}
+.hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 32px;
+}
+.hobbies__box{
+    height: 118px;
+    margin-bottom: 32px;
+}
 
 /*Formación Académica*/
 
