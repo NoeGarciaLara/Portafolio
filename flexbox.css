@@ -185,5 +185,10 @@ section.footer{
     /*Formación Académica*/
     
     /*Experiencia Profesional*/
-    
+    .experience__box{
+        align-items: initial;
+    }
+    .experience__box:nth-child(2),.experience__box:nth-child(4){
+        flex-direction: column;
+    }
     }
