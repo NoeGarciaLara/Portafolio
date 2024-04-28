@@ -176,13 +176,6 @@ section.footer{
     .title__network{
         margin-top: 8px;
     }
-    /*About*/
-        
-    /*Skills*/
-    
-    /*Hobbies*/
-    
-    /*Formación Académica*/
     
     /*Experiencia Profesional*/
     .experience__box{
@@ -191,4 +184,34 @@ section.footer{
     .experience__box:nth-child(2),.experience__box:nth-child(4){
         flex-direction: column;
     }
+    }
+
+    /*Mobile*/
+@media (max-width: 430px) {
+
+    /*Menu*/
+    
+    /*Titulo*/
+    .title__div{
+        justify-content: initial;
+        align-items: normal;
+        flex-direction: column-reverse;
+    }
+    .title__network{
+        margin-top: 16px;
+    }
+    /*Sección sobre mi*/
+    
+    /*Skills*/
+    
+    /*Hobbies*/
+     
+    /*Formación Académica*/
+    
+    /*Experiencia Profesional*/
+    
+     /*Contacto*/
+    
+    /*Footer*/
+    
     }
