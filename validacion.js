@@ -10,23 +10,15 @@ function validarNombre() {
       alert('El campo de Nombre no debe sobrepasar un máximo de 50 caracteres.');
       return false;
     } else {
-      alert('Nombre validado correctamente.');
       return true;
     }
   }
-  
-  document.getElementById('formulario-contacto').addEventListener('submit', function(event) {
-    if(!validarNombre()) {
-      event.preventDefault();
-     }
-  });
 
   // Función para validar el campo de correo electrónico
 function validarEmail() {
   var email = document.getElementById('email').value;
   var formato = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/; // Expresión regular para el formato de e-mail
 
-  // Verificar que el campo no esté vacío y que cumpla con el formato de e-mail
   if(email.trim() === '') {
     alert('El campo de correo electrónico no debe estar en blanco.');
     return false;
@@ -34,16 +26,9 @@ function validarEmail() {
     alert('Por favor, ingrese un correo electrónico válido.');
     return false;
   } else {
-    alert('Correo electrónico validado correctamente.');
     return true;
   }
 }
-
-document.getElementById('formulario-contacto').addEventListener('submit', function(event) {
-  if(!validarEmail()) {
-    event.preventDefault();
-   }
-});
 
 // Función para validar el campo de Asunto
 function validarAsunto(){
@@ -59,13 +44,33 @@ function validarAsunto(){
   }
 
   else {
-    alert('Asunto validado correctamente.');
     return true;
   }
 }
 
+// Función para validar el campo de Mensaje
+function validarMensaje(){
+  var mensaje = document.getElementById('mensaje').value
+  if (mensaje.trim() === '') {
+    alert('El campo mensaje no debe estar en blanco.');
+    return false;
+  }
+  
+  else if (mensaje.length > 300) {
+    alert('El campo mensaje debe contener máximo 300 caracteres.');
+    return false;
+  }
+
+  else {
+    return true;
+  }
+}
+//validación final de todos los campos
+
 document.getElementById('formulario-contacto').addEventListener('submit', function(event) {
-  if(!validarAsunto()) {
-    event.preventDefault();
-   }
+  if (!validarNombre() || !validarEmail() || !validarAsunto() || !validarMensaje()) {
+      event.preventDefault();
+  } else {
+      alert("Se enviaron sus datos correctamente");
+  }
 });
